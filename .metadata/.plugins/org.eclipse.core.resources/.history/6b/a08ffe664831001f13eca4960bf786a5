@@ -1,0 +1,5 @@
+package interfaces;
+
+public interface IUsuariocl2 {
+	TblUsuariocl2 validarUsuario(String usuario, String password);
+}

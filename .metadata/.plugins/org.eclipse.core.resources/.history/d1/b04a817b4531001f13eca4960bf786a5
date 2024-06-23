@@ -1,0 +1,16 @@
+package dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import interfaces.IProductocl2;
+import model.TblProductocl2;
+
+public class ClassProductocl2Imp implements IProductocl2 {
+
+
+}
+

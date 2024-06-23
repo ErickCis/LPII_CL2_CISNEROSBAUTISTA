@@ -1,0 +1,45 @@
+package dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import interfaces.IProductocl2;
+import model.TblProductocl2;
+
+public class ClassProductocl2Imp implements IProductocl2 {
+
+	@Override
+	public void RegistrarProductocl2(TblProductocl2 producto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void ActualizarProductocl2(TblProductocl2 producto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void EliminarProductocl2(TblProductocl2 producto) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public TblProductocl2 BuscarProductocl2(TblProductocl2 producto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<TblProductocl2> ListadoProductocl2() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+

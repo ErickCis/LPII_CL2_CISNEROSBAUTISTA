@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Interface.IProductocl2"/>
+<fullyQualifiedTypeName name="Interface.IUsuariocl2"/>
+<fullyQualifiedTypeName name="Dao.ClassProductocl2"/>
+<fullyQualifiedTypeName name="interfaces.IProductocl2"/>
+<fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+<fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
+<fullyQualifiedTypeName name="javax.persistence.NoResultException"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="dao.ClassUsuariocl2Imp"/>
+<fullyQualifiedTypeName name="interfaces.IUsuariocl2"/>
+<fullyQualifiedTypeName name="model.TblUsuariocl2"/>
+<fullyQualifiedTypeName name="dao.ClassProductocl2Imp"/>
+<fullyQualifiedTypeName name="model.TblProductocl2"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+</qualifiedTypeNameHistroy>

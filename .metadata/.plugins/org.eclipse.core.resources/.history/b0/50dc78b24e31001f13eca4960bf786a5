@@ -1,0 +1,36 @@
+package test;
+
+import dao.ClassProductocl2Imp;
+import model.TblProductocl2;
+
+public class TestProducto {
+	
+	public static void main(String[] args) {
+		
+		TblProductocl2 producto = new TblProductocl2();
+		ClassProductocl2Imp crud = new ClassProductocl2Imp();
+		
+
+		//Testeamos el metodo registrar
+		producto.setNombrecl2("Erickson");
+		producto.setPrecioventacl2(10.0);
+		producto.setPreciocompcl2(9.0);
+		producto.setEstadocl2("Pasable");
+		producto.setDescripcl2("Aceite");
+		crud.RegistrarProductocl2(producto);
+		
+
+		//Testeamos el metodo listar
+		List<TblUsuariocl2> listarProducto = crud.ListarProducto();
+		for(TblUsuariocl2 p:listarProducto){
+			System.out.println("Codigo: "+p.getIdproductocl2()+"\n"+
+								"Nombre: "+p.getNombrecl2()+"\n"+
+								"Precio de Venta: "+p.getPrecioventacl2()+"\n"+
+								"Precio de Compra: "+p.getPreciocompcl2()+"\n"+
+								"Estado: "+p.getEstadocl2()+"\n"+
+								"Descripcion: "+p.getDescripcl2()+"\n");			
+		}
+	
+	}
+
+}

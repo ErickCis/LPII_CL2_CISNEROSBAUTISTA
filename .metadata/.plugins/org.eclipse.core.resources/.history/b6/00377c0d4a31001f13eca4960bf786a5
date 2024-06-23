@@ -1,0 +1,32 @@
+package dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.NoResultException;
+import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
+
+import interfaces.IUsuariocl2;
+import model.TblProductocl2;
+
+public class ClassUsuariocl2Imp implements IUsuariocl2{
+	
+	public TblProductocl2 validarUsuario(String usuario, String password) {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("LPII_CL2_SucapucaCuencaJhonDeyvidjpa");
+		EntityManager em = emf.createEntityManager();
+		try{
+			TypedQuery<TblProductocl2> query = em.createQuery(
+					"SELECT u FROM TblUsuariocl2 u WHERE u.usuariocl2 = :usuario AND u.passwordcl2 = :password",TblProductocl2.class);
+			query.setParameter("usuario", usuario);
+			query.setParameter("password", password);
+			
+			return query.getSingleResult();
+		}//fin del try
+		catch(NoResultException e){
+			return null;
+		}//fin del catch
+		finally{
+			em.close();
+		}
+	}//fin del metodo
+}
